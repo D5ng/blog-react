@@ -8,6 +8,7 @@ import {
 } from "../controllers/post-controllers"
 
 const postRoutes = Router()
+
 /**
  * Get [id] post
  * Get posts
