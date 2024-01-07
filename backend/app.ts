@@ -1,9 +1,13 @@
-import express from "express"
+import express, { json } from "express"
 import mongoose from "mongoose"
 import "dotenv/config"
+import cors from "cors"
 import { DB_NAME, DB_USER, DB_PASSWORD, PORT } from "./server-constants"
 
 const app = express()
+
+app.use(json())
+app.use(cors())
 
 function onServer() {
   mongoose
