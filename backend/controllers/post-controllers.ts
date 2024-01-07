@@ -1,5 +1,5 @@
 import { RequestHandler } from "express"
-import PostService from "../service/post-service"
+import { PostService } from "../service"
 
 const postService = new PostService()
 
